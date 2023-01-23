@@ -1,0 +1,126 @@
+
+.block-logement{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.titre-logement {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ff6060;
+}
+
+.information-logements {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100px;
+    justify-content: space-around;
+    margin: 20px 0 20px 0 ;
+}
+
+.nom-logement {
+    font-size: 25px;
+}
+
+.lieux {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.information-propietaire{
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar-propietaire {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.nom-proprietaire {
+    margin-right: 10px;
+    text-align: right;
+    width: 100px;
+}
+
+.photo-propietaire {
+    border-radius: 50%;
+    height: 50px;
+    object-fit: cover;
+    width: 50px;
+}
+
+.note {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.etoile {
+    height: 25px;
+    width: 25px;
+    padding-left: 10px;
+
+}
+
+.description-equipement-logement {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 15px;
+}
+
+.equipement-logement{
+    width: 47%;
+}
+
+.description-logement {
+    width: 47%;
+}
+
+@media screen and (max-width: 720px) {
+    .titre-logement {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        margin-top: 10px;
+    }
+    .nom-logement {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .tags{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .information-propietaire{
+        flex-direction: row-reverse;
+        margin: 10px 0 10px 0;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .etoile {
+        height: 20px;
+        width: 20px;
+        padding-right: 10px;
+        padding-left: 0;
+    }
+
+    .description-equipement-logement {
+        flex-direction: column;
+    }
+    .equipement-logement{
+        width: 100%;
+    }
+    .description-logement {
+        width: 100%;
+    }
+}
